@@ -38,7 +38,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/j6primelte
+    device/samsung/j6primelte \
+    packages/apps/Bluetooth
 
 # Inherit vendor
 $(call inherit-product, vendor/samsung/j6primelte/j6primelte-vendor.mk)

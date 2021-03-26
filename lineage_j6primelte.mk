@@ -17,10 +17,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Fluid stuff
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 #Bootanimation res
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from j6primelte device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,13 +31,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := j6primelte
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := fluid_j6primelte
+PRODUCT_NAME := lineage_j6primelte
 PRODUCT_MODEL := Galaxy J6+
-
-# Fluid Configuration Stuff
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=BarryBlackCat \
-  ro.fluid.cpu=MSM8917
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_VENDOR := samsung

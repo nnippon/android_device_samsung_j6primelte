@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/styx_j6primelte.mk
+    $(LOCAL_DIR)/dot_j6primelte.mk
